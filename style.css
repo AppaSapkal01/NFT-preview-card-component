@@ -25,48 +25,104 @@ body {
     margin: 1rem;
     padding: 25px;
     background-color: var(--card-BG);
+    border-radius: 0.8rem;
 }
 
 .images {
     max-width: 100%;
+    position: relative;
 }
 
 .equilibrium {
     max-width: 100%;
     overflow: hidden;
     border-radius: 0.7rem;
-    position: relative;
+    display: block;
 }
 
-.equilibrium:hover  {
-    cursor: pointer;
-   
-}
-
-/* .overlay {
-    max-width: 100%;
-    height: 298px;
-    overflow: hidden;
-    border-radius: 0.7rem;
-    position: relative;
-    background-color: hsl(178, 100%, 50%, 60%);
+/* .icon {
+    position: absolute;
+    top: 40.5%;
+    left: 42%;
 } */
 
-.main-image {
-    z-index: 1;
+.equilibrium:hover  {
+    cursor: pointer;   
 }
 
-.main-image:hover {
-    max-width: 100%;
-    height: 298px;
+.overlay {
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     border-radius: 0.7rem;
-    position: relative;
-    background-color: hsl(178, 100%, 50%, 60%);
-    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(178, 100%, 50%, 40%);
+    opacity: 0;
 }
 
+ .overlay:hover {
+    opacity: 1;
+ }
 
+ h1 {
+    color: var(--White);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+ }
+
+ h1:hover {
+    cursor: pointer;
+    color: var(--Cyan);
+ }
+
+ p {
+    font-weight: 300;
+    padding-bottom: 1.5rem;
+ }
+
+ .PriceAndDays {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--line);
+ }
+
+ .price {
+    color: var(--Cyan);
+ }
+
+#creator {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-top:  1rem;
+    padding-bottom: 1rem;
+}
+
+#creator img {
+    width: 2.5rem;
+    border: 2px solid var(--White);
+    border-radius: 100px;
+}
+
+#creator p {
+    margin-top: 20px;
+    margin-left: 1rem;
+}
+
+span {
+    color: var(--White);
+}
+
+span:hover {
+    cursor: pointer;
+    color: var(--Cyan);
+}
 
 
 :root {
