@@ -6,6 +6,19 @@
     box-sizing: border-box;
 }
 
+:root {
+    /* primary */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /* ### Neutral */
+
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
 body {
     display: grid;
     align-items: center;
@@ -124,16 +137,10 @@ span:hover {
     color: var(--Cyan);
 }
 
-
-:root {
-    /* primary */
-    --Soft-blue: hsl(215, 51%, 70%);
-    --Cyan: hsl(178, 100%, 50%);
-
-    /* ### Neutral */
-
-    --main-BG: hsl(217, 54%, 11%);
-    --card-BG: hsl(216, 50%, 16%);
-    --line: hsl(215, 32%, 27%);
-    --White: hsl(0, 0%, 100%);
+.attribution { 
+    font-size: 11px; text-align: center; 
+    padding: 0;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
